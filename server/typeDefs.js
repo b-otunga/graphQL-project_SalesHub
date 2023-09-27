@@ -6,6 +6,7 @@ const typeDefs = gql`
     dealerName: String
     dealerCode: Int
     location: String
+    createdOn: String
   }
 
   input DealerInput {

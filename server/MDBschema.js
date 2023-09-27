@@ -5,6 +5,7 @@ const dealerSchema = new Schema(
         dealerName: String,
        dealerCode: Number,
        location: String,
+       createdOn: String
 
     }
 )  

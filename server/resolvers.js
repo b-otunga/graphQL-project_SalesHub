@@ -20,6 +20,7 @@ const resolvers = {
           dealerName: dealerName,
           dealerCode: dealerCode,
           location: location,
+          createdOn: new Date().toISOString()
         });
         const result = await dealer.save();
         return result;
