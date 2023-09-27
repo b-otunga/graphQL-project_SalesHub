@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+require('dotenv').config(); 
 const { ApolloServer } = require('apollo-server');
 const GQLschema = require('./GQLschema.js');
 const { typeDefs, resolvers } = GQLschema;
@@ -11,7 +12,7 @@ const server = new ApolloServer({
 }); 
 
 mongoose.connect(
-  "mongodb+srv://Bill:procedure1@nodeprojects.mtiiga4.mongodb.net/Sales-Portal?retryWrites=true&w=majority", {
+  process.env.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true
   }
