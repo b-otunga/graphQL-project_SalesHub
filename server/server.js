@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config(); 
 const { ApolloServer } = require('apollo-server');
-const GQLschema = require('./GQLschema.js');
-const { typeDefs, resolvers } = GQLschema;
+const { typeDefs} = require("./typeDefs");
+const { resolvers} = require("./resolvers");
 
 const port = 5020
  
