@@ -1,4 +1,4 @@
-## Sales Portal using graphQL
+## Sales Hub using graphQL
 
 ## Project Description
 The portal will implement a sales system where a dealer onboards customers on behalf of the company. Every dealer has employees called sales agents. So a customer is related to a sales agent who is in turn related to a dealer. GraphQL helps to set up this customer-to-dealer relationship. Other features and relationships to come soon.
